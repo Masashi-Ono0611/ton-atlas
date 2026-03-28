@@ -14,6 +14,7 @@
 | 03 | [IntentLayer TON](03-ton-intent-solver.md) | DeFi / Protocol | ★★ | TON上のIntent-based DEX + Solverネットワーク |
 | 04 | [TON MEV Infra](04-ton-mev-infra.md) | Infrastructure / Research | ★★ | TONのFlashbots — MEVインフラのOSS化 |
 | 05 | [KYA on TON](05-kya-ton-identity.md) | Identity / Infrastructure | ★★ | Telegram IDを活用したKnow Your Agentプリミティブ |
+| 06 | [TON Freedom Stack](06-freedom-stack.md) | Infrastructure / Social | ★★ | TON Proxy+Sites+Storage統合ブラウザ + Bluetooth Mesh決済 |
 
 ---
 
@@ -25,6 +26,9 @@
 2. **既存研究資産が活用できる** — MEV/Flashbotsの知識が直接転用可能
 3. **ハッカソン競合が薄い** — 200件のプロジェクト調査でホワイトスペースを確認
 4. **TON公式ロードマップとアライン** — AgenticKit/AppKit/TON Pay 2.0と補完関係
+
+Freedom Stack (#06) は上記に加え「TON/Telegramの思想的DNA」という軸で選定。
+Durov逮捕・bitchat viral・EU Chat Control — プラットフォームリスクへの需要が実証された。
 
 ---
 
@@ -82,6 +86,11 @@ TON MEV Infra (市場安定化)
     ↓ MEVがエコシステムに還元される
 
 → 「TON × AIエージェント × DeFi」の完全スタック
+
+[別軸]
+TON Freedom Stack
+    ↓ TON Proxy/Sites/Storage × MeshPay
+→ 「Can't be evil」のアーキテクチャを900M Telegramユーザーへ
 ```
 
 ---

@@ -1,54 +1,60 @@
-# TON Ecosystem × DeFi × AI Agent × Payment — Product Research & Ideation
+# TON Atlas — TON Ecosystem Research & Ideation
+
+TON/Telegram エコシステムの深層調査とプロダクトアイデアのリポジトリ。
+DeFi・MEV・AIエージェント・決済インフラ、そして検閲耐性・自由技術まで。
 
 ## ディレクトリ構成
 
 ```
-ton-defi-aiagent-payment/
-├── research/               # エコシステム調査・競合分析・市場動向
-│   ├── _index.md           ← ナビゲーションインデックス（ここから始める）
+ton-atlas/
+├── research/                    # エコシステム調査・競合分析・市場動向
+│   ├── _index.md                ← ナビゲーションインデックス（ここから始める）
 │   │
-│   ├── # ハッカソン調査（identityhub.app 200件）
-│   ├── hackathon-projects.md
-│   ├── hackathon-trends.md
+│   ├── ton/                     # TON エコシステム
+│   │   ├── hackathon-projects.md     ← 全200件プロジェクト生データ
+│   │   ├── hackathon-trends.md       ← 7大トレンド・競合マップ
+│   │   ├── roadmap-products.md       ← AgenticKit・AppKit・TON Pay
+│   │   ├── strategy.md               ← TON Foundation戦略・Gateway 2026
+│   │   └── vs-ecosystem.md           ← 他チェーンとのポジション比較
 │   │
-│   ├── # TON公式エコシステム
-│   ├── ton-roadmap-products.md
-│   ├── ton-strategy.md
+│   ├── chains/                  # クロスチェーン・エコシステム
+│   │   ├── ethereum-base.md          ← ERC-8004, ePBS, Coinbase AgentKit
+│   │   ├── solana.md                 ← elizaOS, Jito, Alpenglow
+│   │   ├── near-sui-aptos.md         ← NEAR Intents, Sui, Aptos
+│   │   └── cross-chain-protocols.md  ← x402, Open Wallet, Agent ID標準
 │   │
-│   ├── # チェーン別分析
-│   ├── chain-ethereum-base.md
-│   ├── chain-solana.md
-│   ├── chain-near-sui-aptos.md
-│   ├── cross-chain-protocols.md
-│   ├── ton-vs-ecosystem.md
+│   ├── defi-mev/                # DeFi・MEV
+│   │   ├── defi-trends.md            ← Intent DeFi, yield SB, RWA, AI×DeFi
+│   │   ├── mev-landscape.md          ← Flashbots, ePBS, SUAVE, Jito
+│   │   └── mev-ton-opportunity.md    ← TON MEV機会・既存研究資産活用
 │   │
-│   └── # DeFi・MEV
-│       ├── defi-trends.md
-│       ├── mev-landscape.md
-│       └── mev-ton-opportunity.md
+│   └── sovereignty/             # 通信の自由・検閲耐性（NEW）
+│       ├── decentralized-communication.md  ← bitchat, TON Proxy, Nostr, Session
+│       └── freedom-tech-philosophy.md      ← Cypherpunk思想・「Can't be evil」
 │
-├── ideation/               # プロダクトコンセプト
-│   ├── README.md           ← アイデア一覧と選定根拠
+├── ideation/                    # プロダクトコンセプト
+│   ├── README.md                ← アイデア一覧と選定根拠
 │   ├── 01-gasless-agent-payment.md   ★★★ AgentPay
 │   ├── 02-telegram-gifts-defi.md     ★★★ GiftFi
 │   ├── 03-ton-intent-solver.md       ★★  IntentLayer TON
 │   ├── 04-ton-mev-infra.md           ★★  TON MEV Infra
-│   └── 05-kya-ton-identity.md        ★★  KYA on TON
+│   ├── 05-kya-ton-identity.md        ★★  KYA on TON
+│   └── 06-freedom-stack.md           ★★  TON Freedom Stack
 │
-├── references/             # 参考資料・リンク
-└── notes/                  # メモ・ブレスト
+├── references/                  # 参考資料・リンク
+└── notes/                       # メモ・ブレスト（.gitignore済み）
 ```
 
 ## テーマ
 
-- **TON Ecosystem**: TON Blockchain, Telegram Mini Apps, TON Connect, Jetton, NFT
-- **DeFi**: DEX, Lending, Yield, Liquidity, Stablecoin on TON
-- **AI Agent**: Autonomous agents, LLM × on-chain, agent wallet, intent-based UX
-- **Payment**: P2P payment, merchant payment, cross-chain settlement, stablecoin payment
+- **TON / Telegram**: TON Blockchain, Telegram Mini Apps, TON Connect, Jetton, NFT, Gifts
+- **DeFi**: DEX, Lending, Yield, Liquidity, Intent-based trading, MEV
+- **AI Agent**: Autonomous agents, LLM × on-chain, agent wallet, A2A payment
+- **Payment**: P2P payment, M2M payment, cross-chain settlement, gasless UX
+- **Sovereignty**: Censorship-resistant communication, Bluetooth mesh, TON Proxy/Sites/Storage, Cypherpunk philosophy
 
 ## 進め方
 
-1. `research/` に各領域の調査ドキュメントを蓄積
+1. `research/` の各カテゴリで調査を蓄積
 2. `ideation/` にプロダクトアイデアをMD形式で記録
-3. `references/` にソース・URLをまとめる
-4. `notes/` に日次メモ・ブレストを残す
+3. `research/_index.md` がナビゲーションの起点
